@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our College</h1>
+        <button onclick="showCollegeDetails()">College Details</button>
+        <button onclick="showAdmissionForm()">Admission Form</button>
+    </div>
+
+    <div id="college-details" class="hidden">
+        <h2>College Details</h2>
+        <table>
+            <tr><th>College Name</th><td>XYZ University</td></tr>
+            <tr><th>Established</th><td>2000</td></tr>
+            <tr><th>Location</th><td>Hyderabad, Telangana</td></tr>
+            <tr><th>Courses Offered</th><td>Engineering, Arts, Science</td></tr>
+            <tr><th>Website</th><td><a href="https://xyzuniversity.edu">xyzuniversity.edu</a></td></tr>
+        </table>
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <div id="admission-form" class="hidden">
+        <h2>Admission Form</h2>
+        <form id="form">
+            <label for="name">Student Name:</label><input type="text" id="name" required><br>
+            <label for="age">Age:</label><input type="number" id="age" required><br>
+            <label for="gender">Gender:</label><input type="text" id="gender" required><br>
+            <label for="fatherName">Father's Name:</label><input type="text" id="fatherName" required><br>
+            <label for="motherName">Mother's Name:</label><input type="text" id="motherName" required><br>
+            <label for="batch">Batch:</label><input type="text" id="batch" required><br>
+            <label for="interPercentage">Inter Percentage:</label><input type="number" id="interPercentage" required><br>
+            <label for="eapcetRank">EAPCET Rank:</label><input type="number" id="eapcetRank" required><br>
+            <label for="address">Address:</label><textarea id="address" required></textarea><br>
+            <label for="phone">Phone Number:</label><input type="tel" id="phone" required><br>
+            <label for="parentsPhone">Parents' Phone Number:</label><input type="tel" id="parentsPhone" required><br>
+            <label for="branch">Branch:</label><input type="text" id="branch" required><br>
+            <label for="studentSignature">Student Signature:</label><input type="file" id="studentSignature" required><br>
+            <label for="parentSignature">Parent Signature:</label><input type="file" id="parentSignature" required><br>
+            <button type="submit">Submit</button>
+        </form>
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
